@@ -1,0 +1,35 @@
+
+define example
+  var modifier
+  var dice
+
+  make (mod dice)
+    this.modifier = mod
+    this.dice = dice
+  end make
+
+  roll ()
+    return d + modifier
+  end roll
+
+  setmod (x)
+    this.modifier = x
+  end setmod
+
+  setdice (dice)
+    this.dice = dice
+  end setdice
+end define
+
+f (x)
+  return 2 + x
+end f
+
+var e = new example(5 2d6)
+var x = e.roll
+printline x
+if x > 5
+  print "x > 5"
+else
+  print "x >= 5"
+end if
