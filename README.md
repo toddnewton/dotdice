@@ -5,7 +5,7 @@ DotDice
 
 DotDice is a programming language implemented 
 in lisp which is meant to simulate the rolling of dice.  
-The file extension for a DSL file is .dice
+The file extension for a DotDice file is .dice
 
 ## Dependencies
 
